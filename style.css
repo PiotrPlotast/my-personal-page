@@ -90,8 +90,8 @@ textarea:not([rows]) {
 }
 
 body {
-    background-color: #1a1a1b;
-    color: rgba(255, 255, 255, 0.87);
+    background-color: #2C2C33;
+    color: #FFF;
     font-family: 'Lato', sans-serif;
     overflow: hidden;
 }
@@ -104,7 +104,7 @@ body {
 /* end of variables */
 
 /* start of css for the page */
-.blob {
+/* .blob {
     background: linear-gradient(90deg, #2e1dce, #427deb);
     border-radius: 50%;
     filter: blur(50px);
@@ -113,4 +113,8 @@ body {
     position: absolute;
     width: 100px;
     z-index: -1000;
+} */
+
+img {
+    width: 50px;
 }
