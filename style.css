@@ -99,21 +99,13 @@ body {
 /* end of css reset */
 
 /* variables */
-:root {}
+:root {
+    --bg-color: #2C2C33;
+    --text-color: #FFF;
+    --accent-color: #503636;
+}
 
 /* end of variables */
-
-/* start of css for the page */
-/* .blob {
-    background: linear-gradient(90deg, #2e1dce, #427deb);
-    border-radius: 50%;
-    filter: blur(50px);
-    height: 100px;
-    pointer-events: none;
-    position: absolute;
-    width: 100px;
-    z-index: -1000;
-} */
 
 img {
     width: 50px;
