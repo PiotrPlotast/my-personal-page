@@ -89,24 +89,24 @@ textarea:not([rows]) {
     scroll-margin-block: 5ex;
 }
 
-body {
-    background-color: #2C2C33;
-    color: #FFF;
-    font-family: 'Lato', sans-serif;
-    overflow: hidden;
-}
-
 /* end of css reset */
 
 /* variables */
 :root {
     --bg-color: #2C2C33;
     --text-color: #FFF;
-    --accent-color: #503636;
+    --accent-color: #364350;
 }
 
 /* end of variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+}
 
-img {
+.burger {
+    background: none;
+    border: none;
     width: 50px;
 }
