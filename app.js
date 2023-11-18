@@ -1,7 +1,23 @@
-// const blob = document.querySelector(".blob");
+// disclosure.js
+const disclosures = document.querySelectorAll('.js-disclosure');
 
-// onmousemove = function (e) {
-//     blob.style.left = e.clientX - 50 + "px";
-//     blob.style.top = e.clientY - 50 + "px";
-// }
+function toggleDisclosure() {
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+}
 
+// update state not JS has loaded
+disclosures.forEach(component => {
+    component.dataset.state = 'ready';
+
+    const disclosureButtons = component.querySelectorAll('.js-disclosure-btn');
+
+    disclosureButtons.forEach(btn => {
+        // initialise button attributes now JS has loaded
+        btn.removeAttribute('title');
+        btn.removeAttribute('disabled');
+
+        // listen for clicks
+        btn.addEventListener('click', toggleDisclosure);
+    });
+});
