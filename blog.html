@@ -9,15 +9,30 @@
 </head>
 
 <body>
+    <style>
+        /**
+         * Hide the menu during the 'no-js' state
+         * to solve Cumulative Layout Shift.
+         */
+        [data-state='no-js'] .nav-links {
+            display: none;
+        }
+    </style>
     <header>
         <nav>
-            <a href="./index.html">Pietrell.tech</a>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
-            </ul>
+            <a href="./index.html" class="logo-link">Pietrell.tech</a>
+            <div class="disclosure js-disclosure" data-state="no-js">
+                <button class="disclosure__button js-disclosure-btn" aria-controls="content" aria-expanded="false"
+                    aria-label="navigation menu button" disabled>
+                    <img src="./images/hamburger-menu-svgrepo-com.svg" alt="" class="disclosure__icon">
+                </button>
+                <ul role="navigation" class="disclosure__content" id="content">
+                    <li><a href="./index.html" class="active-page nav-links__link">Home</a></li>
+                    <li><a href="./projects.html" class="nav-links__link">Projects</a></li>
+                    <li><a href="./blog.html" class="nav-links__link">Blog</a></li>
+                    <li><a href="./contact.html" class="nav-links__link">Contact Me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 </body>

@@ -108,17 +108,39 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo-link {
+    padding: 0.5rem;
+    color: var(--text-color);
 }
 
 .disclosure__content {
+    background-color: var(--accent-color);
     list-style: none;
-    margin-top: 10px;
-    padding: 0;
+    padding: 1rem;
+    margin-top: 2rem;
     position: absolute;
+    right: 2.5rem;
+}
+
+.disclosure__content::after {
+    content: '';
+    position: absolute;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: var(--accent-color);
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    top: -2rem;
+}
+
+.disclosure__content li:visited {
+    color: var(--text-color);
 }
 
 .disclosure__icon {
-    fill: currentcolor;
     transition: transform 0.3s ease-out;
 }
 
@@ -151,8 +173,14 @@ nav {
 
         .disclosure__icon {
             transform: rotate(-180deg);
+
         }
     }
+}
+
+.profile-picture {
+    border-radius: 50%;
+    margin: auto;
 }
 
 .coffee-svg {
