@@ -136,8 +136,12 @@ nav {
     top: -2rem;
 }
 
-.disclosure__content li:visited {
+.disclosure__content__link {
     color: var(--text-color);
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+
 }
 
 .disclosure__icon {
