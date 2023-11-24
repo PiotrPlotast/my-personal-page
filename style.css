@@ -111,10 +111,6 @@ nav {
     padding: 1rem;
 }
 
-div {
-    width: 100%;
-}
-
 .logo-link {
     padding: 0.5rem;
     color: var(--text-color);
