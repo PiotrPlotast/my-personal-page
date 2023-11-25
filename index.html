@@ -48,8 +48,9 @@
                             class="coffee-svg"></span></p>
             </div>
             <div class="right-col">
-                <h1>Hi, I'm Pietrell. <br> Junior Frontend Developer</h1>
-                <h2>I'm passionate junior frontend developer ready to help you/your company build awesome stuff.</h2>
+                <h1 class="hero__heading">Hi, I'm Pietrell. <br> Junior Frontend Developer</h1>
+                <h2 class="hero__text">I'm passionate junior frontend developer ready to help you/your company build
+                    awesome stuff.</h2>
                 <a href="./contact.html" class="btn">Contact Me</a>
             </div>
             <hr>
@@ -57,23 +58,23 @@
         <div class="skills">
             <h2>My Skills</h2>
             <div class="skill">
-                <h3>CSS & SASS</h3>
+                <h3 class="skill__heading">CSS & SASS</h3>
                 <p>I have really strong CSS foundations which will for sure help me in the future projects, as well as
                     in learning new css frameworks/libraries. On top of that, I know what is and how to use SASS, that
                     elevates my possibilities in the “CSS world”.</p>
             </div>
             <div class="skill">
-                <h3>JavaScript</h3>
+                <h3 class="skill__heading">JavaScript</h3>
                 <p>For a beginner I have a deep understanding of that programming language and its concepts such as
                     scope, arrow functions, this, oop, async and much more. That knowledge surely will help me in the
                     process of learning new frameworks/libraries and working with bare JS won’t make me sick.</p>
             </div>
             <div class="skill">
-                <h3>React</h3>
+                <h3 class="skill__heading">React</h3>
                 <p>Coming Soon</p>
             </div>
             <div class="skill">
-                <h3>Self Learner</h3>
+                <h3 class="skill__heading">Self Learner</h3>
                 <p>My ability to study and learn topics/technologies by myself is one of the best soft skills I could’ve
                     dreamt of as it helps me overcome any obstacles and solve any problems solo without much help from
                     other members of the team.</p>
@@ -82,8 +83,31 @@
         </div>
         <div class="projects">
             <h2>My Projects</h2>
+            <div class="carousel">
+                <div class="carousel__project">
+                    <img src="https://placehold.co/250" alt="">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="carousel__project">
+                    <img src="https://placehold.co/250" alt="">
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="carousel__project">
+                    <img src="https://placehold.co/250" alt="">
+                    <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)">a</span>
+                    <span class="dot" onclick="currentSlide(2)">a</span>
+                    <span class="dot" onclick="currentSlide(3)">a</span>
+                </div>
+            </div>
             <a href="./projects.html" class="btn">Go To My Projects</a>
-            <div class="carousel"></div>
             <hr>
         </div>
         <div class="contact">
@@ -114,7 +138,8 @@
             }
         </style>
     </noscript>
-    <script src="./app.js"></script>
+    <script src="./scripts/disclosure.js"></script>
+    <script src="./scripts/carousel.js"></script>
 </body>
 
 </html>

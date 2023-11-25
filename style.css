@@ -105,6 +105,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+hr {
+    margin: 1rem 0;
+    border: 1px solid var(--accent-color);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -202,12 +207,13 @@ main {
     display: inline;
 }
 
-h1 {
-    font-size: 1.7rem;
+.hero__heading {
+    font-size: 1.5rem;
 }
 
-h2 {
+.hero__text {
     font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .btn {
@@ -229,7 +235,10 @@ h2 {
 
 }
 
-hr {
-    margin: 1rem 0;
-    border: 1px solid var(--accent-color);
+.skill__heading {
+    text-decoration: underline 2px;
+}
+
+.carousel {
+    width: clamp(250px, 100%, 500px);
 }
