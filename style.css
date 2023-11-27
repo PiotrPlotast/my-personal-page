@@ -246,8 +246,18 @@ main {
     position: relative;
 }
 
+.projects__heading {
+    margin: 1rem 0 2rem 0;
+    text-decoration: underline 2px;
+}
+
 .carousel {
     width: clamp(250px, 100%, 500px);
+}
+
+.carousel__project {
+    margin-bottom: 1rem;
+    transition: transform 1s ease-out;
 }
 
 .carousel .prev {
@@ -266,7 +276,7 @@ main {
     cursor: pointer;
     display: inline-block;
     height: 15px;
-    margin: 0 2px;
+    margin: 30px 2px 0 2px;
     transition: background-color 0.3s ease-out;
     width: 15px;
 
