@@ -302,3 +302,17 @@ main {
 .projects-btn {
     padding: 1rem;
 }
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.linkedin,
+.github {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    filter: invert(25%) sepia(12%) saturate(968%) hue-rotate(169deg) brightness(88%) contrast(89%);
+}
