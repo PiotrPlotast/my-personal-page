@@ -320,6 +320,11 @@ main {
     padding: 1rem;
 }
 
+.send-btn {
+    border: none;
+    padding: 1rem 2rem;
+}
+
 .socials {
     display: flex;
     justify-content: space-between;
@@ -332,4 +337,13 @@ main {
     height: 100px;
     display: inline;
     filter: invert(25%) sepia(12%) saturate(968%) hue-rotate(169deg) brightness(88%) contrast(89%);
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0.5rem 0;
 }

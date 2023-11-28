@@ -6,18 +6,27 @@ function toggleDisclosure() {
     this.setAttribute('aria-expanded', !isExpanded);
 }
 
-// update state not JS has loaded
-disclosures.forEach(component => {
-    component.dataset.state = 'ready';
+function init() {
+    // early return if no disclosures present on page
+    if (!disclosures.length) {
+        return
+    }
 
-    const disclosureButtons = component.querySelectorAll('.js-disclosure-btn');
+    // update state not JS has loaded
+    disclosures.forEach(component => {
+        component.dataset.state = 'ready';
 
-    disclosureButtons.forEach(btn => {
-        // initialise button attributes now JS has loaded
-        btn.removeAttribute('title');
-        btn.removeAttribute('disabled');
+        const disclosureButtons = component.querySelectorAll('.js-disclosure-btn');
 
-        // listen for clicks
-        btn.addEventListener('click', toggleDisclosure);
+        disclosureButtons.forEach(btn => {
+            // initialise button attributes now JS has loaded
+            btn.removeAttribute('title');
+            btn.removeAttribute('disabled');
+
+            // listen for clicks
+            btn.addEventListener('click', toggleDisclosure);
+        });
     });
-});
+}
+
+init();

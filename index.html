@@ -28,7 +28,7 @@
             <a href="./index.html" class="logo-link">Pietrell.tech</a>
             <div class="disclosure js-disclosure" data-state="no-js">
                 <button class="disclosure__button js-disclosure-btn" aria-controls="content" aria-expanded="false"
-                    aria-label="navigation menu button" disabled>
+                    disabled aria-label="navigation menu button" disabled>
                     <img src="./images/hamburger-menu-svgrepo-com.svg" alt="" class="disclosure__icon">
                 </button>
                 <ul role="navigation" class="disclosure__content" id="content">
@@ -141,16 +141,16 @@
     <footer>
         <h3>Coded and Designed by Pietrell</h3>
     </footer>
+    <script src="./scripts/disclosure.js"></script>
+    <script src="./scripts/carousel.js"></script>
     <noscript>
         <!-- Show all content if no JS -->
         <style>
-            [data-state='no-js'] .nav-links {
+            [data-state='no-js'] .disclosure__content {
                 display: block;
             }
         </style>
     </noscript>
-    <script src="./scripts/disclosure.js"></script>
-    <script src="./scripts/carousel.js"></script>
 </body>
 
 </html>
