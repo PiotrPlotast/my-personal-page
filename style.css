@@ -146,7 +146,12 @@ nav {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
+    transition: all 0.3s ease-out;
+    text-decoration: var(--accent-color);
+}
 
+.disclosure__content__link:hover {
+    text-decoration: underline 2px;
 }
 
 .disclosure__icon {
@@ -401,4 +406,21 @@ footer {
 
 footer h3 {
     margin: 0.5rem 0;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .disclosure__content__link {
+        padding: 0.5rem 0;
+        text-decoration: underline 2px;
+    }
+}
+
+@media (min-width: 500px) {
+    .disclosure__content {
+        padding: 2rem;
+    }
+
+    .disclosure__content__link {
+        padding: 1rem 0;
+    }
 }
