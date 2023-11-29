@@ -425,6 +425,11 @@ footer h3 {
 }
 
 @media (min-width: 700px) {
+    nav {
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+
     .disclosure__button {
         display: none;
     }
