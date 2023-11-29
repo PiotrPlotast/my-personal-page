@@ -243,6 +243,11 @@ main {
 
 }
 
+.skills__heading {
+    margin: 1rem 0 2rem 0;
+    text-decoration: underline 2px;
+}
+
 .skill__heading {
     text-decoration: underline 2px;
 }
@@ -325,11 +330,16 @@ main {
 }
 
 .projects-btn {
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .contact {
     width: 100%;
+}
+
+.contact__heading {
+    margin: 1rem 0 2rem 0;
+    text-decoration: underline 2px;
 }
 
 form {
@@ -343,9 +353,11 @@ input,
 textarea {
     border: none;
     background-color: var(--accent-color);
+    color: #FFF;
     margin: 1rem;
     padding: 1rem;
     width: clamp(250px, 100%, 600px);
+    border-radius: 10px;
 }
 
 input::placeholder,
@@ -353,9 +365,13 @@ textarea::placeholder {
     color: var(--text-color);
 }
 
+textarea {
+    height: 200px;
+}
+
 .send-btn {
     border: none;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     margin: 0 0 1rem 0;
     width: fit-content;
 }
