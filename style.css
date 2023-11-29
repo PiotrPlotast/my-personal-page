@@ -187,17 +187,16 @@ nav {
 
         .disclosure__icon {
             transform: rotate(-180deg);
-
         }
     }
 }
 
 main {
-    padding: 2em;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 2em;
     text-align: center;
 }
 
@@ -212,9 +211,9 @@ main {
 }
 
 .coffee-svg {
-    width: 0.8rem;
-    height: 0.8rem;
     display: inline;
+    height: 0.8rem;
+    width: 0.8rem;
 }
 
 .hero__heading {
@@ -275,8 +274,8 @@ main {
 }
 
 .carousel {
-    width: clamp(250px, 100%, 500px);
     margin: auto;
+    width: clamp(250px, 100%, 500px);
 }
 
 .carousel__project {
@@ -285,10 +284,10 @@ main {
 }
 
 .carousel__project img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 0.5s ease-out;
+    width: 100%;
 }
 
 .carousel__project img:is(:focus, :hover) {
@@ -306,8 +305,8 @@ main {
 }
 
 .carousel .next {
-    right: 0;
     position: absolute;
+    right: 0;
     transition: all 0.3s ease-out;
 }
 
@@ -352,21 +351,21 @@ main {
 }
 
 form {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 input,
 textarea {
-    border: none;
     background-color: var(--accent-color);
+    border: none;
+    border-radius: 10px;
     color: #FFF;
     margin: 1rem;
     padding: 1rem;
     width: clamp(250px, 100%, 600px);
-    border-radius: 10px;
 }
 
 input::placeholder,
@@ -380,8 +379,8 @@ textarea {
 
 .send-btn {
     border: none;
-    padding: 1rem clamp(3rem, 20%, 6rem);
     margin: 1rem 0 2rem 0;
+    padding: 1rem clamp(3rem, 20%, 6rem);
     width: fit-content;
 }
 
@@ -393,10 +392,10 @@ textarea {
 
 .linkedin,
 .github {
-    width: 100px;
-    height: 100px;
     display: inline;
     filter: invert(25%) sepia(12%) saturate(968%) hue-rotate(169deg) brightness(88%) contrast(89%);
+    height: 100px;
+    width: 100px;
 }
 
 footer {
@@ -431,10 +430,10 @@ footer h3 {
     }
 
     .disclosure__content {
+        background-color: transparent;
         display: flex !important;
         margin-top: 0;
         padding: 0;
-        background-color: transparent;
     }
 
     .disclosure__content::after {
