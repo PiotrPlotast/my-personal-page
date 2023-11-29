@@ -424,3 +424,24 @@ footer h3 {
         padding: 1rem;
     }
 }
+
+@media (min-width: 700px) {
+    .disclosure__button {
+        display: none;
+    }
+
+    .disclosure__content {
+        display: flex !important;
+        margin-top: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .disclosure__content::after {
+        display: none;
+    }
+
+    .disclosure__content__link {
+        padding: 0.5rem;
+    }
+}
