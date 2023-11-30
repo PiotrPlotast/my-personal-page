@@ -9,7 +9,7 @@
 My own personal website
 
 
-## built with
+## Built with
 
 - html 
 - css
