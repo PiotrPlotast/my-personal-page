@@ -229,6 +229,7 @@ main {
 .hero__text {
     font-size: 1.1rem;
     font-weight: 400;
+    max-width: 40ch;
 }
 
 .contact-btn {
@@ -497,6 +498,7 @@ footer h3 {
     }
 
     .contact-btn {
-        width: 50%;
+        text-align: center;
+        width: 13rem;
     }
 }
