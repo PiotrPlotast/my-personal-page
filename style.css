@@ -108,6 +108,7 @@ body {
 hr {
     margin: 1rem 0;
     border: 1px solid var(--accent-color);
+    width: 100%;
 }
 
 nav {
@@ -203,7 +204,7 @@ main {
     text-align: center;
 }
 
-.profile-picture {
+.hero__image {
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -457,5 +458,45 @@ footer h3 {
 
     .nav-li:last-child {
         margin-right: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .hero {
+        display: grid;
+        grid-template-areas: 'left right';
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .left-col {
+        grid-area: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-col {
+        grid-area: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        text-align: left;
+    }
+
+    .hero__img .hero__heading {
+        font-size: 2rem;
+    }
+
+    .hero__text {
+        font-size: 1.3rem;
+        max-width: 45ch;
+    }
+
+    .contact-btn {
+        width: 50%;
     }
 }
