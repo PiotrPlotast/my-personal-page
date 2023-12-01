@@ -141,10 +141,13 @@ nav {
     top: -2rem;
 }
 
+.nav-li {
+    padding: 0.5rem;
+}
+
 .disclosure__content__link {
     color: var(--text-color);
     display: block;
-    padding: 0.5rem;
     text-decoration: none;
     transition: all 0.3s ease-out;
     text-decoration: var(--accent-color);
@@ -202,6 +205,8 @@ main {
 
 .profile-picture {
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
     margin: auto;
 }
 
@@ -408,7 +413,7 @@ footer h3 {
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .disclosure__content__link {
+    .nav-li {
         padding: 0.5rem;
         text-decoration: underline 2px;
     }
@@ -419,7 +424,7 @@ footer h3 {
         padding: 2rem;
     }
 
-    .disclosure__content__link {
+    .nav-li {
         padding: 1rem;
     }
 }
@@ -445,7 +450,12 @@ footer h3 {
         display: none;
     }
 
-    .disclosure__content__link {
+    .nav-li {
         padding: 0.5rem;
+        margin-right: 2rem;
+    }
+
+    .nav-li:last-child {
+        margin-right: 0;
     }
 }
