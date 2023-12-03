@@ -302,6 +302,8 @@ main {
 }
 
 .carousel .prev {
+    background: none;
+    border: none;
     left: 0;
     position: absolute;
     transition: all 0.3s ease-out;
@@ -312,6 +314,8 @@ main {
 }
 
 .carousel .next {
+    background: none;
+    border: none;
     position: absolute;
     right: 0;
     transition: all 0.3s ease-out;
